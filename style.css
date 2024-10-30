@@ -1,40 +1,64 @@
+.carousel-container h2{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
+
 header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
     text-align: center;
 }
+
 nav {
     display: flex;
     justify-content: center;
     background-color: #444;
 }
+
 nav a {
     color: #fff;
     padding: 15px 20px;
     text-decoration: none;
 }
+
 nav a:hover {
     background-color: #555;
 }
-.container {
+
+.carousel-container {
     max-width: 800px;
     margin: 20px auto;
-    padding: 20px;
+    overflow: hidden;
+    position: relative;
     background-color: #fff;
 }
-article {
-    margin-bottom: 20px;
+
+.carousel {
+    display: flex;
+    animation: slide 10s infinite;
 }
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #e4e4e4;
+    border: 1px solid #ccc;
+}
+
 article h2 {
     color: #333;
 }
+
 footer {
     background-color: #333;
     color: #fff;
@@ -44,3 +68,12 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}
+
