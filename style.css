@@ -76,4 +76,29 @@ footer {
     75% { transform: translateX(-300%); }
     100% { transform: translateX(0); }
 }
+.noticias-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  .noticia {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #e4e4f4;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 0; /* Deixar em forma quadrada */
+  }
+  
+  .noticia h3,
+  .noticia p {
+    margin: 0;
+  }
+  
 
