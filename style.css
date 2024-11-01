@@ -1,4 +1,4 @@
-.carousel-container h2{
+.carrosel-container h2{
     text-align: center;
     margin-bottom: 10px;
     color: #333;
@@ -34,7 +34,7 @@ nav a:hover {
     background-color: #555;
 }
 
-.carousel-container {
+.carrosel-container {
     max-width: 800px;
     margin: 20px auto;
     overflow: hidden;
@@ -42,12 +42,12 @@ nav a:hover {
     background-color: #fff;
 }
 
-.carousel {
+.carrosel {
     display: flex;
     animation: slide 10s infinite;
 }
 
-.carousel-item {
+.carrosel-item {
     min-width: 100%;
     box-sizing: border-box;
     padding: 20px;
@@ -101,4 +101,3 @@ footer {
     margin: 0;
   }
   
-
