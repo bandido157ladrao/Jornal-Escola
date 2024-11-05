@@ -1,21 +1,39 @@
-.carrosel-container h2{
-    text-align: center;
-    margin-bottom: 10px;
-    color: #333;
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-}
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Abril Fatface", serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-image: url('brasao\ 2.jpg');
+    background-size: cover; /* A imagem irá cobrir todo o cabeçalho */
+    background-position: center; /* Centraliza a imagem no cabeçalho */
+    height: 300px; /* Ajuste a altura conforme necessário */
+    position: relative;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhorar a legibilidade do texto */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 2em;
+}
+
+.carousel-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
 }
 
 nav {
@@ -34,7 +52,7 @@ nav a:hover {
     background-color: #555;
 }
 
-.carrosel-container {
+.carousel-container {
     max-width: 800px;
     margin: 20px auto;
     overflow: hidden;
@@ -42,12 +60,12 @@ nav a:hover {
     background-color: #fff;
 }
 
-.carrosel {
+.carousel {
     display: flex;
     animation: slide 10s infinite;
 }
 
-.carrosel-item {
+.carousel-item {
     min-width: 100%;
     box-sizing: border-box;
     padding: 20px;
@@ -76,15 +94,16 @@ footer {
     75% { transform: translateX(-300%); }
     100% { transform: translateX(0); }
 }
+
 .noticias-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px auto;
     max-width: 800px;
-  }
-  
-  .noticia {
+}
+
+.noticia {
     width: 200px;
     height: 200px;
     margin: 10px;
@@ -93,11 +112,10 @@ footer {
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    border-radius: 0; /* Deixar em forma quadrada */
-  }
-  
-  .noticia h3,
-  .noticia p {
+    border-radius: 0; 
+}
+
+.noticia h3,
+.noticia p {
     margin: 0;
-  }
-  
+}

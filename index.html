@@ -4,133 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jornal Escolar</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-        header {
-            text-align: center;
-            margin: 20px 0;
-        }
-        nav {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .carousel-item {
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <h1>Jornal Escolar</h1>
+        <div class="header-content">
     </header>
     <nav>
-        <a href="#" class="mx-3">Início</a>
-        <a href="#" class="mx-3">Eventos</a>
-        <a href="#" class="mx-3">Contato</a>
+        <a href="#">Início</a>
+        <a href="#">Eventos</a>
+        <a href="#">Contato</a>
     </nav>
-    
-    <div class="container my-2">
-        <h2 class="text-center">Destaque da Semana</h2>
-        <div id="carouselSemana" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <h2>Notícia 1</h2>
-                    <p>Conteúdo da primeira notícia.</p>
-                </div>
-                <div class="carousel-item">
-                    <h2>Notícia 2</h2>
-                    <p>Conteúdo da segunda notícia.</p>
-                </div>
-                <div class="carousel-item">
-                    <h2>Notícia 3</h2>
-                    <p>Conteúdo da terceira notícia.</p>
-                </div>
-                <div class="carousel-item">
-                    <h2>Notícia 4</h2>
-                    <p>Conteúdo da quarta notícia.</p>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselSemana" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselSemana" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-            </a>
+    <div class="carousel-container">
+        <h2>Destaque da Semana</h2>
+        <div class="carousel">
+            <article class="carousel-item">
+                <h2>Notícia 1</h2>
+                <p>Conteúdo da primeira notícia.</p>
+            </article>
+            <article class="carousel-item">
+                <h2>Notícia 2</h2>
+                <p>Conteúdo da segunda notícia.</p>
+            </article>
+            <article class="carousel-item">
+                <h2>Notícia 3</h2>
+                <p>Conteúdo da terceira notícia.</p>
+            </article>
+            <article class="carousel-item">
+                <h2>Noticia 4</h2>
+                <p>Conteudo da quarta Noticia</p>
+            </article>
         </div>
     </div>
-
-    <div class="container my-2">
-        <h2 class="text-center">Destaque do Mês</h2>
-        <div id="carouselMes" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <h2>Destaque 1</h2>
-                    <p>Conteúdo do primeiro destaque.</p>
-                </div>
-                <div class="carousel-item">
-                    <h2>Destaque 2</h2>
-                    <p>Conteúdo do segundo destaque.</p>
-                </div>
-                <div class="carousel-item">
-                    <h2>Destaque 3</h2>
-                    <p>Conteúdo do terceiro destaque.</p>
-                </div>
-                <div class="carousel-item">
-                    <h2>Destaque 4</h2>
-                    <p>Conteúdo da quarta notícia.</p>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselMes" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselMes" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-            </a>
-        </div>
+    <div class="carousel-container">
+        <h2> Destaque do Mes</h2>
+        <div class="carousel">
+            <article class="carousel-item">
+                <h2>Destaque 1</h2>
+                <p>conteudo do primeiro destaque</p>
+            </article>
+            <article class="carousel-item">
+                <h2>destaque 2</h2>
+                <p>conteudo do segundo destaque</p>
+        </article>
+            <article class="carousel-item">
+            <h2>destaque 3</h2>
+            <p> conteudo do terceiro destaque</p>
+        </article>
+            <article class="carousel-item">
+            <h2>Noticia 4</h2>
+            <p>Conteudo da quarta Noticia</p>
+        </article>
     </div>
+</div>
 
-    <div class="noticias-container">
-        <div class="noticia">
-            <h3>Gincana Escolar</h3>
-            <p>Conteúdo da notícia 1.</p>
-        </div>
-        <div class="noticia">
-            <h3>Desfile 7 setembro </h3>
-            <p>Conteúdo da notícia 2.</p>
-        </div>
-        <div class="noticia">
-            <h3>Pé de Meia (ensino-medio)</h3>
-            <p>Conteúdo da notícia 3.</p>
-        </div>
-        <div class="noticia">
-            <h3>Colégio Destaque 2023</h3>
-            <p>Conteúdo da notícia 4.</p>
-        </div>
-        <div class="noticia">
-            <h3>15 de novembro proclamação da Republica</h3>
-            <p>Conteúdo da notícia 5.</p>
-        </div>
-        <div class="noticia">
-            <h3>Visista a Uniamerica</h3>
-            <p>Conteúdo da notícia 6.</p>
-        </div>
+<div class="noticias-container">
+    <div class="noticia">
+      <h3>Notícia 1</h3>
+      <p>Conteúdo da notícia 1.</p>
     </div>
-
+    <div class="noticia">
+      <h3>Notícia 2</h3>
+      <p>Conteúdo da notícia 2.</p>
+    </div>
+    <div class="noticia">
+      <h3>Notícia 3</h3>
+      <p>Conteúdo da notícia 3.</p>
+    </div>
+    <div class="noticia">
+      <h3>Notícia 4</h3>
+      <p>Conteúdo da notícia 4.</p>
+    </div>
+    <div class="noticia">
+      <h3>Notícia 5</h3>
+      <p>Conteúdo da notícia 5.</p>
+    </div>
+    <div class="noticia">
+      <h3>Notícia 6</h3>
+      <p>Conteúdo da notícia 6.</p>
+    </div>
+</main>
     <footer>
-        <p class="text-center">&copy; 2024 cetam hericlys,eduardo,leonardo. Todos os direitos reservados.</p>
+        &copy; 2024 Jornal Escolar. Todos os direitos reservados.
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
