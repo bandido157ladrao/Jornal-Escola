@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+body {
+    font-family: "Abril Fatface", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3e8b31;
+}
+
+header {
+    background-image: url('brasao');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.event {
+    background: white;
+    margin: 30px 0;
+    padding: 70px;
+    border-left: 5px solid #50b3a2; /* Borda menor no comprimento */
+    border-radius: 15px; /* Bordas arredondadas */
+    position: relative;
+}
+
+.event h3 {
+    margin-top: 0;
+}
+
+.event::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-image: url('icone_evento.png'); /* Substitua pelo caminho do seu ícone */
+    background-size: cover;
+    border-radius: 50%; /* Ícone arredondado */
+}

@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-image: url('brasao\ 2.jpg');
+    background-image: url('img/brasao\ 2.jpg');
     background-size: cover; /* A imagem irá cobrir todo o cabeçalho */
     background-position: center; /* Centraliza a imagem no cabeçalho */
     height: 300px; /* Ajuste a altura conforme necessário */
