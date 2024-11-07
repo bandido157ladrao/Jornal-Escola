@@ -80,3 +80,33 @@ h1 {
 .event-details {
     flex: 1;
 }
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 300px;
+    margin: auto;
+}
+
+.carousel img {
+    width: 300px;
+    transition: transform 0.5s ease;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.buttons button {
+    margin: 0 5px;
+    padding: 5px 10px;
+}
+
+.event {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.event-details {
+    margin-top: 20px;
+}
