@@ -124,15 +124,15 @@ nav a:hover {
 
 /* Notícias Individuais */
 .noticia {
-    width: 95%;
-    max-width: 900px;
-    padding: 70px;
+    width: 75%;
+    max-width: 800px;
+    padding: 20px;
     background-color: #39339e;
     border: 2px solid #444;
     text-align: center;
     box-sizing: border-box;
     transition: transform 0.4s ease-in-out;
-    border-radius: 80px;
+    border-radius: 12px;
     margin: 0 auto;
 }
 
@@ -144,7 +144,7 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 20px;
+    padding: 10px;
     cursor: pointer;
     font-size: 1.2em;
     z-index: 1;
@@ -173,7 +173,7 @@ nav a:hover {
 }
 
 .noticia p {
-    font-size: 2em;
+    font-size: 1em;
     color: #ccc;
     margin: 0;
 }
