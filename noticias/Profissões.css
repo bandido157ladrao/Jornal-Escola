@@ -1,0 +1,78 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #2c3e50, #2980b9);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo do container */
+.container {
+    max-width: 900px;
+    width: 90%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Estilo do título */
+h1 {
+    color: #e74c3c;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilos para subtítulos */
+h2 {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Estilos para parágrafos */
+p {
+    line-height: 1.6;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Estilos para lista */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Estilos para citações */
+em {
+    font-style: italic;
+    color: #16a085;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}

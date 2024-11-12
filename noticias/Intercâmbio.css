@@ -1,0 +1,82 @@
+/* Estilos globais */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 20px;
+}
+
+header {
+    background-color: #2190a6;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: square;
+    margin: 20px 0;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+em {
+    font-style: italic;
+    color: #2c3e50;
+}
+
+.conteudo {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo h2, .conteudo p {
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
