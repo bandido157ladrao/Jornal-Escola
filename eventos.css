@@ -1,20 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 /* Estilos gerais */
+/* Linha preta no topo da página */
 body {
     font-family: "Abril Fatface", serif;
     margin: 0;
     padding: 0;
-    background-color: #d998db; /* Fundo (Rosa Claro) */
+    background: linear-gradient(135deg, #2190a6, #ad3a26); /* Gradiente entre azul e vermelho */
+    color: #333;
+    border-top: 5px solid black; /* Linha preta no topo */
+}
+
+nav {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    background-color: #444;
+}
+
+nav a {
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #555;
 }
 
 /* CSS para o banner */
 .banner-img {
     width: calc(100% - 4cm);      
-    max-width: 1700px;            
+    max-width: 1400px;            
     height: 400px;            
     border-radius: 15px;         
     object-fit: cover;            
@@ -22,6 +38,7 @@ body {
     margin: 1cm auto;         
 
 }
+
 
 .event:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -104,7 +121,7 @@ h1 {
     background: rgba(255, 255, 255, 0.295);
     margin: 20px 0;
     padding: 20px;
-    border-left: 5px solid #ff4500; /* Borda (Laranja Avermelhado) */
+    border-left: 5px linear-gradient(135deg, #2190a6, #ad3a26); /* Borda (Laranja Avermelhado) */
     border-radius: 15px;
     text-align: left; /* Alinha o texto à esquerda */
     position: relative;
@@ -198,4 +215,29 @@ a:hover {
     .icons img {
         width: 40px;
     }
+}
+.btn-voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #4CAF50; /* Cor verde */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-voltar:hover {
+    background-color: #45a049; /* Cor verde mais escuro quando passa o mouse */
+    cursor: pointer;
+}
+
+body {
+    font-family: "Abril Fatface", serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #2190a6, #ad3a26); /* Gradiente entre azul e vermelho */
+    color: #333;
 }
