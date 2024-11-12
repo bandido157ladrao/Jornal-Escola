@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jornal Escolar</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="eventos.html">
 </head>
 <body>
     <header>
         <div class="header-content">
-            <!-- Conteúdo do cabeçalho -->
         </div>
     </header>
     <nav>
@@ -21,60 +19,78 @@
     <div class="carousel-container">
         <h2>Destaque da Semana</h2>
         <div class="carousel">
-            <article class="carousel-item">
-                <h2>Notícia 1</h2>
-                <p>Conteúdo da primeira notícia.</p>
+            <article class="carousel-item">  
+                <h2>Feira de Ciências</h2>
+                <p>Os alunos apresentam seus experimentos e descobertas científicas em um evento interativo e educativo.</p>
             </article>
             <article class="carousel-item">
-                <h2>Notícia 2</h2>
-                <p>Conteúdo da segunda notícia.</p>
+                <h2>Palestras Educativas</h2>
+                <p>Especialistas são convidados para palestrar sobre temas variados, promovendo conhecimento e conscientização.</p>
             </article>
             <article class="carousel-item">
-                <h2>Notícia 3</h2>
-                <p>Conteúdo da terceira notícia.</p>
+                <h2>Festival de Talentos</h2>
+                <p>Alunos demonstram suas habilidades artísticas, como música, dança, poesia e muito mais.</p>
             </article>
             <article class="carousel-item">
-                <h2>Notícia 4</h2>
-                <p>Conteúdo da quarta notícia.</p>
+                <h2>Mostra de Artes</h2>
+                <p>Uma exposição com obras dos alunos, incluindo pinturas, esculturas e outras criações artísticas.</p>
             </article>
         </div>
     </div>
+        
     <div class="noticias-container">
-        <div class="noticia">
-            <h3>Notícia 1</h3>
-            <p>Conteúdo da notícia 1.</p>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="carousel-wrapper">
+            <div class="noticia">
+                <h3>Alunos Participam de Palestra sobre Educação Ambiental</h3>
+                <p>Estudantes do Colégio São José se envolvem em uma palestra inspiradora sobre a importância de cuidar do planeta!</p>
+                <a href="/noticiasIndividuas.html/ambiental.html" class="saiba-mais">Saiba mais: Descubra as discussões e ideias que surgiram durante o evento e como a escola planeja implementar ações sustentáveis!</a>
+            </div>
+            
+            <div class="noticia">
+                <h3>Intercâmbio Cultural: Alunos Trocam Experiências com Escola Internacional</h3>
+                <p>Uma oportunidade única de conhecer novas culturas! Alunos do Ensino Médio participam de intercâmbio com escola internacional.</p>
+                <a href="" class="saiba-mais">Saiba mais: Veja como essa troca cultural contribuiu para o desenvolvimento dos alunos e como foi a interação em inglês!</a>
+            </div>
+            
+            <div class="noticia">
+                <h3>Visita de Profissionais: Conhecendo o Mundo do Trabalho</h3>
+                <p>Alunos do Ensino Médio conhecem as possibilidades do futuro em um encontro com profissionais de diversas áreas!</p>
+                <a href="" class="saiba-mais">Saiba mais: Saiba quais profissões foram apresentadas e as lições compartilhadas pelos profissionais!</a>
+            </div>
+            
+            <div class="noticia">
+                <h3>Projeto de Inclusão: Alunos Criam Cartazes de Sensibilização</h3>
+                <p>Um projeto tocante de inclusão! Alunos do 9º ano criam cartazes que promovem empatia e respeito.</p>
+                <a href="https://www.seulink.com" class="saiba-mais">Saiba mais: Veja os temas abordados nos cartazes e como eles estão impactando a comunidade escolar.</a>
+            </div>
+            
+            <div class="noticia">
+                <h3>Feira de Profissões: Oportunidades para o Futuro</h3>
+                <p>Um evento que abre portas para o futuro! Colégio Maria Clara realiza Feira de Profissões com diversas áreas de atuação.</p>
+                <a href="https://www.seulink.com" class="saiba-mais">Saiba mais: Conheça os profissionais presentes e as palestras que ajudaram os alunos a planejar suas carreiras!</a>
+            </div>
+            
+            <div class="noticia">
+                <h3>Competição de Robótica: Alunos se Destacam em Evento Regional</h3>
+                <p>Jovens talentos brilham na competição regional de robótica, conquistando o segundo lugar para o Colégio João XXIII!</p>
+                <a href="https://www.seulink.com" class="saiba-mais">Saiba mais: Descubra os detalhes da conquista e como a equipe se preparou para esse grande desafio!</a>
+            </div>
+                     
         </div>
-        <div class="noticia">
-            <h3>Notícia 2</h3>
-            <p>Conteúdo da notícia 2.</p>
-        </div>
-        <div class="noticia">
-            <h3>Notícia 3</h3>
-            <p>Conteúdo da notícia 3.</p>
-        </div>
-        <div class="noticia">
-            <h3>Notícia 4</h3>
-            <p>Conteúdo da notícia 4.</p>
-        </div>
-        <div class="noticia">
-            <h3>Notícia 5</h3>
-            <p>Conteúdo da notícia 5.</p>
-        </div>
-        <div class="noticia">
-            <h3>Notícia 6</h3>
-            <p>Conteúdo da notícia 6.</p>
-        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
     </div>
+    
+                            
     <div class="social-banner">
-        <span>&copy; 2024 Jornal Escolar. Todos os direitos reservados.</span>
+        <span>Acompanhe a Gazeta do Povo nas redes sociais</span>
         <div class="social-icons">
             <a href="https://facebook.com" target="_blank">
                 <img src="facebook-icon.png" alt="Facebook" width="30">
             </a>
-            <a href="https://twitter.com" target="_blank">
-                
+
             <a href="https://instagram.com" target="_blank">
-                <img src="img/images.png" alt="Instagram" width="30">
+                <img src="instagram-icon.png" alt="Instagram" width="30">
             </a>
         </div>
     </div>

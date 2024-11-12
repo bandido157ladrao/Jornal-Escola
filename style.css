@@ -1,26 +1,45 @@
+/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
+/* Estilos Globais */
 body {
     font-family: "Abril Fatface", serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #2190a6, #ad3a26); /* Gradiente entre azul e vermelho */
+    color: #333;
 }
 
+/* Para o conteúdo de texto */
+h1, h2, h3, p {
+    color: #2c3e50;
+}
+
+/* Link de navegação */
+a {
+    color: #de7562;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff4500;
+}
+
+/* Cabeçalho */
 header {
-    background-image: url('img/brasao\ 2.jpg');
-    background-size: cover; /* A imagem irá cobrir todo o cabeçalho */
-    background-position: center; /* Centraliza a imagem no cabeçalho */
-    height: 300px; /* Ajuste a altura conforme necessário */
-    position: relative;
-    text-align: center;
+    background-image: url('img/brasao 2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    position: relative;
 }
 
 .header-content {
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhorar a legibilidade do texto */
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
     border-radius: 10px;
 }
@@ -30,12 +49,7 @@ h1 {
     font-size: 2em;
 }
 
-.carousel-container h2 {
-    text-align: center;
-    margin-bottom: 10px;
-    color: #333;
-}
-
+/* Navegação */
 nav {
     display: flex;
     justify-content: center;
@@ -52,12 +66,20 @@ nav a:hover {
     background-color: #555;
 }
 
+/* Carrossel de Destaque */
 .carousel-container {
     max-width: 800px;
     margin: 20px auto;
     overflow: hidden;
     position: relative;
-    background-color: #fff;
+    background-color: #333;
+    border-radius: 12px;
+}
+
+.carousel-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
 }
 
 .carousel {
@@ -67,16 +89,19 @@ nav a:hover {
 
 .carousel-item {
     min-width: 100%;
-    box-sizing: border-box;
     padding: 20px;
-    background-color: #e4e4e4;
-    border: 1px solid #ccc;
+    background-color: #b89090;
+    border: 2px solid #444;
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 
-article h2 {
-    color: #333;
+.carousel-item:hover {
+    transform: translateY(-5px);
 }
 
+/* Animação do carrossel */
 @keyframes slide {
     0% { transform: translateX(0); }
     25% { transform: translateX(-100%); }
@@ -85,31 +110,95 @@ article h2 {
     100% { transform: translateX(0); }
 }
 
+/* Container de Notícias */
 .noticias-container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+    width: 80%;
+    height: 500px;
     margin: 20px auto;
-    max-width: 800px;
+    position: relative;
+    background-color: transparent;
 }
 
+/* Notícias Individuais */
 .noticia {
-    width: 200px;
-    height: 200px;
-    margin: 10px;
+    width: 75%;
+    max-width: 800px;
     padding: 20px;
-    background-color: #e4e4f4;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #39339e;
+    border: 2px solid #444;
     text-align: center;
-    border-radius: 0;
+    box-sizing: border-box;
+    transition: transform 0.4s ease-in-out;
+    border-radius: 12px;
+    margin: 0 auto;
 }
 
-.noticia h3,
+/* Botões de Navegação do Carrossel de Notícias */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 8px 0 0 8px;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.noticia h3 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
 .noticia p {
+    font-size: 1em;
+    color: #ccc;
     margin: 0;
 }
 
+/* Efeito de hover para aumentar o destaque */
+.noticia:hover {
+    transform: scale(1.02);
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    .noticia {
+        width: 90%;
+    }
+
+    .noticia h3 {
+        font-size: 1.3em;
+    }
+
+    .noticia p {
+        font-size: 0.95em;
+    }
+}
+
+/* Banner de Redes Sociais */
 .social-banner {
     background-color: #333;
     color: white;
@@ -128,4 +217,28 @@ article h2 {
 .social-icons {
     display: flex;
     gap: 5px;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    header {
+        height: 200px;
+    }
+
+    .carousel-container, .noticias-container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .noticia {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px 0;
+    }
 }

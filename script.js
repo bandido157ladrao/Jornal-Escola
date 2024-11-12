@@ -1,7 +1,22 @@
 let currentIndex = 0;
-const items = document.querySelectorAll('.carousel-item');
-setInterval(() => {
-    items[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex + 1) % items.length;
-    items[currentIndex].classList.add('active');
-}, 3000);
+
+function changeSlide(direction) {
+    const noticias = document.querySelectorAll('.noticia');
+    const totalNoticias = noticias.length;
+
+    // Atualiza o índice atual
+    currentIndex = (currentIndex + direction + totalNoticias) % totalNoticias;
+
+    // Esconde todas as notícias
+    noticias.forEach((noticia, index) => {
+        noticia.style.display = 'none';
+    });
+
+    // Exibe a notícia atual
+    noticias[currentIndex].style.display = 'block';
+}
+
+// Exibe a primeira notícia inicialmente
+document.addEventListener('DOMContentLoaded', () => {
+    changeSlide(0); // Exibe a primeira notícia
+});
