@@ -1,189 +1,126 @@
 /* Estilos globais */
 body {
-    font-family: "Abril Fatface", serif;
+    font-family: "Arial", sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #2190a6, #ad3a26); /* Gradiente entre azul e vermelho */
+    background: linear-gradient(135deg, #2190a6, #ad3a26); 
     color: #333;
+    line-height: 1.6;
+    padding-top: 20px;
 }
 
-/* Estilo do container principal */
-.container {
-    background-color: #ffffff;
-    width: 90%;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-    text-align: center; /* Garante centralização do texto */
+/* Contêiner principal da notícia */
+.news-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Efeito de hover no container */
-.container:hover {
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-    transform: translateY(-5px);
+/* Cabeçalho da notícia */
+.news-header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Centralização de imagens dentro do container */
-.container img {
-    max-width: 100%; /* Limita a largura máxima da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block;
-    margin: 0 auto; /* Centraliza a imagem */
+.news-header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.2;
 }
 
-/* Estilo do título principal */
-h1 {
-    font-size: 3em;
-    color: #1d7a4a;
+.news-date {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Resumo da notícia */
+.news-summary {
+    font-size: 1.3em;
+    color: #444;
     text-align: center;
     margin-bottom: 30px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
 }
 
-/* Estilos para subtítulos */
-h2 {
-    font-size: 2.2em;
-    color: #2c3e50;
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-/* Estilos para parágrafos */
-p {
-    font-size: 1.2em;
-    color: #555;
-    margin-bottom: 20px;
-    line-height: 1.8;
-}
-
-/* Estilos para listas */
-ul {
-    list-style-type: none;
-    padding-left: 0;
+/* Estilo da imagem da notícia */
+.news-image {
+    text-align: center;
     margin-bottom: 30px;
 }
 
-ul li {
-    font-size: 1.1em;
-    margin-bottom: 12px;
-    padding-left: 1.5em;
-    position: relative;
-    color: #555;
+.news-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-ul li:before {
-    content: "✔️";
-    position: absolute;
-    left: 0;
-    color: #1d7a4a;
-    font-size: 1.4em;
-}
-
-/* Estilo para citações */
-em {
+.news-image figcaption {
+    font-size: 1em;
+    color: #777;
+    margin-top: 10px;
     font-style: italic;
-    color: #333;
+}
+
+/* Detalhes do conteúdo da notícia */
+.news-details {
     font-size: 1.1em;
-    margin-top: 15px;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 40px;
 }
 
-/* Links */
-a {
-    color: #de7562;
-    text-decoration: none;
-    transition: color 0.3s ease;
+.news-details p {
+    margin-bottom: 20px;
 }
 
-a:hover {
-    color: #ff4500;
+/* Citação dos alunos */
+.news-details em {
+    font-style: italic;
+    color: #2a5d63;
 }
 
-/* Estilos para o cabeçalho */
-header {
-    background-image: url('img/header-image.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Rodapé da notícia */
+.news-footer {
     text-align: center;
-    color: white;
+    font-size: 1.1em;
+    color: #333;
 }
 
-header h1 {
-    font-size: 3.5em;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Estilos de navegação */
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #444;
-    padding: 10px 0;
-}
-
-nav a {
-    color: #fff;
-    padding: 15px 20px;
+.news-footer a {
+    color: #2190a6; /* Cor do link em azul */
     text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
-nav a:hover {
-    background-color: #555;
+.news-footer a:hover {
+    text-decoration: underline;
 }
 
-/* Estilos para o rodapé */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 0.9em;
-}
-
-footer a {
-    color: #de7562;
-}
-
-footer a:hover {
-    color: #ff4500;
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .container {
-        padding: 20px;
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .news-container {
         width: 95%;
     }
 
-    h1 {
-        font-size: 2.2em;
+    .news-header h1 {
+        font-size: 2em;
     }
 
-    h2 {
-        font-size: 1.8em;
+    .news-summary {
+        font-size: 1.1em;
     }
 
-    p {
+    .news-details {
         font-size: 1em;
     }
 
-    ul li {
+    .news-footer {
         font-size: 1em;
-    }
-
-    header h1 {
-        font-size: 2.5em;
     }
 }
