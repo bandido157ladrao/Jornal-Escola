@@ -1,78 +1,189 @@
 /* Estilos globais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Abril Fatface", serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #34495e, #1abc9c);
+    background: linear-gradient(135deg, #2190a6, #ad3a26); /* Gradiente entre azul e vermelho */
     color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
-/* Estilo do container */
+/* Estilo do container principal */
 .container {
-    max-width: 900px;
+    background-color: #ffffff;
     width: 90%;
-    background-color: #fff;
-    padding: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
-    text-align: left;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: center; /* Garante centralização do texto */
 }
 
-/* Estilo do título */
+/* Efeito de hover no container */
+.container:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+/* Centralização de imagens dentro do container */
+.container img {
+    max-width: 100%; /* Limita a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+/* Estilo do título principal */
 h1 {
-    color: #27ae60;
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 3em;
+    color: #1d7a4a;
     text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
 /* Estilos para subtítulos */
 h2 {
+    font-size: 2.2em;
     color: #2c3e50;
-    font-size: 1.5em;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
 /* Estilos para parágrafos */
 p {
-    line-height: 1.6;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    color: #555;
     margin-bottom: 20px;
+    line-height: 1.8;
 }
 
-/* Estilos para lista */
+/* Estilos para listas */
 ul {
-    list-style-type: disc;
-    margin-left: 20px;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 30px;
 }
 
-li {
+ul li {
     font-size: 1.1em;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    padding-left: 1.5em;
+    position: relative;
+    color: #555;
 }
 
-/* Estilos para citações */
+ul li:before {
+    content: "✔️";
+    position: absolute;
+    left: 0;
+    color: #1d7a4a;
+    font-size: 1.4em;
+}
+
+/* Estilo para citações */
 em {
     font-style: italic;
-    color: #2980b9;
+    color: #333;
+    font-size: 1.1em;
+    margin-top: 15px;
 }
 
-/* Responsividade */
+/* Links */
+a {
+    color: #de7562;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff4500;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-image: url('img/header-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilos de navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #de7562;
+}
+
+footer a:hover {
+    color: #ff4500;
+}
+
+/* Estilos responsivos */
 @media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        width: 95%;
+    }
+
     h1 {
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
     h2 {
-        font-size: 1.3em;
+        font-size: 1.8em;
     }
 
     p {
         font-size: 1em;
+    }
+
+    ul li {
+        font-size: 1em;
+    }
+
+    header h1 {
+        font-size: 2.5em;
     }
 }

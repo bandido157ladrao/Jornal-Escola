@@ -84,7 +84,7 @@ nav a:hover {
 
 .carousel {
     display: flex;
-    animation: slide 10s infinite;
+    animation: slide 25s infinite;
 }
 
 .carousel-item {
