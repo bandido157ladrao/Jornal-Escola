@@ -1,0 +1,153 @@
+/* Estilo geral para o body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Título */
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 68px;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilo para a lista de contatos */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2cm;
+    flex-wrap: wrap;
+    margin-top: 160px;
+}
+
+/* Estilo para cada item da lista (quadrado) */
+li {
+    width: 260px; /* Tamanho fixo do quadrado */
+    height: 260px; /* Tamanho fixo do quadrado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden; /* Garante que a imagem não saia do limite do quadrado */
+    transition: transform 0.3s ease; /* Transição suave para o efeito de hover */
+}
+
+/* Estilo para os links */
+a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    position: relative;
+    color: white; /* Cor do texto */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para o texto */
+.text {
+    position: absolute;
+    z-index: 1; /* Garante que o texto fique acima da imagem */
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Adicionando a imagem como fundo */
+li:nth-child(1) {
+    background-image: url('github-icon.png');
+    background-size: cover;
+    background-position: center;
+}
+
+li:nth-child(2) {
+    background-image: url('instagram-icon.png');
+    background-size: cover;
+    background-position: center;
+}
+
+li:nth-child(3) {
+    background-image: url('facebook-icon.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Efeito de hover nos links */
+a:hover {
+    transform: scale(1.05);
+}
+
+/* Efeito de hover nos li (quadrado) */
+li:hover {
+    transform: scale(1.1);
+}
+
+/* Media Queries para tornar o layout responsivo */
+
+/* Para telas pequenas (smartphones) */
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 32px; /* Reduz o tamanho do título em telas menores */
+    }
+
+    ul {
+        margin-top: 40px; /* Diminui a distância entre o título e a lista */
+        gap: 1cm; /* Diminui o espaço entre os itens */
+    }
+
+    li {
+        width: 180px; /* Reduz o tamanho do quadrado */
+        height: 180px; /* Reduz o tamanho do quadrado */
+    }
+
+    /* Ajuste de tamanho da fonte para o texto */
+    .text {
+        font-size: 14px; /* Ajuste o tamanho da fonte para caber melhor */
+    }
+}
+
+/* Para telas de médio porte (tablets) */
+@media screen and (max-width: 1024px) {
+    h2 {
+        font-size: 48px; /* Ajuste do tamanho do título */
+    }
+
+    ul {
+        gap: 1.5cm; /* Ajuste o espaço entre os itens */
+    }
+
+    li {
+        width: 220px; /* Ajuste o tamanho do quadrado */
+        height: 220px; /* Ajuste o tamanho do quadrado */
+    }
+}
+
+/* Para telas grandes (desktops) */
+@media screen and (min-width: 1025px) {
+    h2 {
+        font-size: 68px; /* Tamanho do título para telas grandes */
+    }
+
+    ul {
+        gap: 2cm; /* Maior espaço entre os itens em telas grandes */
+    }
+
+    li {
+        width: 260px; /* Tamanho fixo para o quadrado */
+        height: 260px; /* Tamanho fixo para o quadrado */
+    }
+}
