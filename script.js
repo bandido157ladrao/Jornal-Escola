@@ -20,3 +20,19 @@ function changeSlide(direction) {
 document.addEventListener('DOMContentLoaded', () => {
     changeSlide(0); // Exibe a primeira notícia
 });
+
+
+const cards = Array.from(document.querySelectorAll(".card"));
+const cardsContainer = document.querySelector("#cards");
+
+cardsContainer.addEventListener("mousemove", (e) => {
+    for (const card of cards) {
+        const rect = card.getBoundingClientRect(); // Obtém as coordenadas do card
+        const x = e.clientX - rect.left; // Calcula a posição X do mouse dentro do card
+        const y = e.clientY - rect.top;  // Calcula a posição Y do mouse dentro do card
+
+        // Aplica as variáveis CSS para as coordenadas X e Y
+        card.style.setProperty("--mouse-x", `${x}px`);
+        card.style.setProperty("--mouse-y", `${y}px`);
+    }
+});

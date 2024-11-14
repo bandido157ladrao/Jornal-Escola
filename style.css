@@ -1,7 +1,7 @@
-/* Importação de fontes */
+/* --- Importação de fontes --- */
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-/* Estilos Globais */
+/* --- Estilos Globais --- */
 body {
     font-family: "Abril Fatface", serif;
     margin: 0;
@@ -10,12 +10,10 @@ body {
     color: #333;
 }
 
-/* Para o conteúdo de texto */
 h1, h2, h3, p {
     color: #2c3e50;
 }
 
-/* Link de navegação */
 a {
     color: #de7562;
     text-decoration: none;
@@ -25,7 +23,7 @@ a:hover {
     color: #ff4500;
 }
 
-/* Cabeçalho */
+/* --- Cabeçalho --- */
 header {
     background-image: url('img/brasao 2.jpg');
     background-size: cover;
@@ -49,7 +47,7 @@ h1 {
     font-size: 2em;
 }
 
-/* Navegação */
+/* --- Navegação --- */
 nav {
     display: flex;
     justify-content: center;
@@ -66,7 +64,7 @@ nav a:hover {
     background-color: #555;
 }
 
-/* Carrossel de Destaque */
+/* --- Carrossel de Destaque --- */
 .carousel-container {
     max-width: 800px;
     margin: 20px auto;
@@ -101,7 +99,7 @@ nav a:hover {
     transform: translateY(-5px);
 }
 
-/* Animação do carrossel */
+/* --- Animação do Carrossel --- */
 @keyframes slide {
     0% { transform: translateX(0); }
     25% { transform: translateX(-100%); }
@@ -110,7 +108,7 @@ nav a:hover {
     100% { transform: translateX(0); }
 }
 
-/* Container de Notícias */
+/* --- Container de Notícias --- */
 .noticias-container {
     display: flex;
     align-items: center;
@@ -122,7 +120,7 @@ nav a:hover {
     background-color: transparent;
 }
 
-/* Notícias Individuais */
+/* --- Notícias Individuais --- */
 .noticia {
     width: 75%;
     max-width: 800px;
@@ -136,7 +134,7 @@ nav a:hover {
     margin: 0 auto;
 }
 
-/* Botões de Navegação do Carrossel de Notícias */
+/* --- Botões de Navegação do Carrossel de Notícias --- */
 .prev, .next {
     position: absolute;
     top: 50%;
@@ -178,12 +176,12 @@ nav a:hover {
     margin: 0;
 }
 
-/* Efeito de hover para aumentar o destaque */
+/* --- Efeito de hover para aumentar o destaque na notícia --- */
 .noticia:hover {
     transform: scale(1.02);
 }
 
-/* Responsividade para dispositivos menores */
+/* --- Responsividade para dispositivos menores --- */
 @media (max-width: 768px) {
     .noticia {
         width: 90%;
@@ -198,28 +196,46 @@ nav a:hover {
     }
 }
 
-/* Banner de Redes Sociais */
+/* --- Banner de Redes Sociais --- */
 .social-banner {
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    padding: 20px;
+    background-color: #343131; /* Cor de fundo para o banner */
 }
 
 .social-banner span {
-    font-size: 1.2em;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #f5ebeb;
 }
 
 .social-icons {
     display: flex;
-    gap: 5px;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os ícones */
 }
 
-/* Estilos Responsivos */
+/* --- Estilo para os ícones sociais --- */
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out; /* Transição suave para o efeito */
+}
+
+/* Efeito de aumento no ícone ao passar o mouse */
+.social-icon:hover {
+    transform: scale(1.5); /* Aumenta o ícone 1.5 vezes */
+}
+
+.card {
+    /* Outros estilos... */
+    transform: translate(var(--mouse-x), var(--mouse-y));
+}
+
+
+/* --- Estilos Responsivos --- */
 @media (max-width: 768px) {
     header {
         height: 200px;
