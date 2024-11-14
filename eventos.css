@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-/* Estilos gerais */
-/* Linha preta no topo da página */
 body {
     font-family: "Abril Fatface", serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #2190a6, #ad3a26); /* Gradiente entre azul e vermelho */
+    background: linear-gradient(135deg, #2190a6, #ad3a26);
     color: #333;
-    border-top: 5px solid black; /* Linha preta no topo */
+    border-top: 5px solid black;
 }
 
 nav {
@@ -27,7 +25,6 @@ nav a:hover {
     background-color: #555;
 }
 
-/* CSS para o banner */
 .banner-img {
     width: calc(100% - 4cm);      
     max-width: 1400px;            
@@ -35,10 +32,8 @@ nav a:hover {
     border-radius: 15px;         
     object-fit: cover;            
     display: block;
-    margin: 1cm auto;         
-
+    margin: 1cm auto;
 }
-
 
 .event:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -52,16 +47,15 @@ nav a:hover {
     transition: all 0.3s ease;
 }
 
-/* Estilos do conteúdo */
 .content h1 {
     font-size: 2.5em;
-    color: #333333; /* Texto (Cinza Escuro) */
+    color: #333333;
     margin-bottom: 10px;
 }
 
 .content p {
     font-size: 1.2em;
-    color: #333333; /* Texto (Cinza Escuro) */
+    color: #333333;
 }
 
 .icons {
@@ -82,7 +76,6 @@ nav a:hover {
     height: auto;
 }
 
-/* Cabeçalho de Eventos */
 header {
     width: 100%;
     background-size: cover;
@@ -102,18 +95,16 @@ header {
 }
 
 h1 {
-    color: #333333; /* Texto (Cinza Escuro) */
+    color: #333333;
     font-size: 2em;
 }
 
-/* Container para seção de eventos */
 .container {
     width: 90%;
     margin: 20px auto;
     overflow: hidden;
 }
 
-/* Estilos dos eventos */
 .event {
     display: flex;
     flex-direction: row;
@@ -121,20 +112,20 @@ h1 {
     background: rgba(255, 255, 255, 0.295);
     margin: 20px 0;
     padding: 20px;
-    border-left: 5px linear-gradient(135deg, #2190a6, #ad3a26); /* Borda (Laranja Avermelhado) */
+    border-left: 5px linear-gradient(135deg, #2190a6, #ad3a26);
     border-radius: 15px;
-    text-align: left; /* Alinha o texto à esquerda */
+    text-align: left;
     position: relative;
 }
 
 .event h3 {
     margin-top: 0;
-    text-align: center; /* Centraliza o texto h3 */
-    width: 100%; /* Ocupa toda a largura disponível */
+    text-align: center;
+    width: 100%;
 }
 
 .event p {
-    margin-left: 20px; /* Ajusta a margem à esquerda */
+    margin-left: 20px;
 }
 
 .event::before {
@@ -145,13 +136,13 @@ h1 {
     transform: translateY(-50%);
     width: 30px;
     height: 30px;
-    background-image: url('icone_evento.png'); /* Substitua pelo caminho do seu ícone */
+    background-image: url('icone_evento.png');
     background-size: cover;
-    border-radius: 50%; /* Ícone arredondado */
+    border-radius: 50%;
 }
 
 .event-img {
-    margin-right: 20px; /* Adiciona margem à direita da imagem */
+    margin-right: 20px;
     border-radius: 10px;
     width: 300px;
     max-width: 100%;
@@ -162,18 +153,16 @@ h1 {
     flex: 1;
 }
 
-/* Detalhes/Links */
 a {
-    color: #ff8c00; /* Detalhes/Links (Laranja Vibrante) */
+    color: #ff8c00;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #ff4500; /* Borda (Laranja Avermelhado) para links ao passar o mouse */
+    color: #ff4500;
 }
 
-/* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
     .container {
         width: 100%;
@@ -182,22 +171,22 @@ a:hover {
 
     .event {
         flex-direction: column;
-        text-align: center; /* Alinha o texto ao centro em dispositivos móveis */
+        text-align: center;
     }
 
     .event p {
-        margin-left: 0; /* Remove a margem à esquerda em dispositivos móveis */
+        margin-left: 0;
     }
 
     .event-img {
-        margin-right: 0; /* Remove a margem à direita em dispositivos móveis */
-        width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
+        margin-right: 0;
+        width: 100%;
         height: auto;
     }
 
     .event::before {
         left: 50%;
-        transform: translateX(-50%) translateY(-50%); /* Centraliza o ícone acima da imagem */
+        transform: translateX(-50%) translateY(-50%);
     }
 
     .banner {
@@ -216,28 +205,4 @@ a:hover {
         width: 40px;
     }
 }
-.btn-voltar {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #4CAF50; /* Cor verde */
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
 
-.btn-voltar:hover {
-    background-color: #45a049; /* Cor verde mais escuro quando passa o mouse */
-    cursor: pointer;
-}
-
-body {
-    font-family: "Abril Fatface", serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #2190a6, #ad3a26); /* Gradiente entre azul e vermelho */
-    color: #333;
-}
