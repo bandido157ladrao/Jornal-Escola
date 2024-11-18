@@ -11,18 +11,19 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* Estilo para o modo claro */
 body.light {
-    background: linear-gradient(135deg, #f0f0f0, #ffffff); /* Gradiente para o modo claro */
+    background: linear-gradient(135deg, #ffefd5, #ffe4b5); /* Gradiente mais vibrante */
     color: #333333;
 }
 
 /* Estilo para o modo escuro */
 body.dark-mode {
-    background: linear-gradient(135deg, #121212, #333333); /* Gradiente para o modo escuro */
-    color: #e0e0e0;
+    background: linear-gradient(135deg, #504d4d, #615a5a); /* Gradiente mais escuro */
+    color: #f5f5f5;
 }
 
 /* Título */
@@ -30,7 +31,7 @@ h2 {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 68px;
-    color: #333;
+    color: inherit;
     text-align: center;
 }
 
@@ -56,7 +57,7 @@ li {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 /* Estilo para os links */
@@ -140,6 +141,7 @@ li:hover .tooltip {
     border: none;
     cursor: pointer;
     color: inherit;
+    transition: color 0.3s ease;
 }
 
 /* Media Queries para tornar o layout responsivo */
