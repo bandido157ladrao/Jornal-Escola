@@ -14,6 +14,32 @@ body {
     transition: background 0.3s ease, color 0.3s ease;
 }
 
+/* --- Navegação --- */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    position: fixed; /* Torna o nav fixo no topo */
+    top: 0; /* Coloca na parte superior */
+    left: 0; /* Garante que ocupe toda a largura */
+    width: 100%; /* Largura total da tela */
+    z-index: 1000; /* Coloca o nav acima de outros elementos */
+    padding: 10px 0; /* Adiciona espaçamento superior e inferior */
+}
+
+/* Links da navegação */
+nav a {
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+/* Efeito de hover */
+nav a:hover {
+    background-color: #555;
+}
+
+
 /* Estilo para o modo claro */
 body.light {
     background: linear-gradient(135deg, #ffefd5, #ffe4b5); /* Gradiente mais vibrante */
@@ -133,15 +159,15 @@ li:hover .tooltip {
 
 /* Estilo para o botão */
 #theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: inherit;
-    transition: color 0.3s ease;
+    position: fixed;  /* Fixar o botão na tela */
+    bottom: 20px;     /* Distância da parte inferior */
+    right: 20px;      /* Distância da borda direita */
+    font-size: 24px;  /* Tamanho do ícone */
+    background: none; /* Sem fundo */
+    border: none;     /* Sem borda */
+    cursor: pointer;  /* Cursor de pointer ao passar o mouse */
+    color: inherit;   /* Herda a cor do texto */
+    transition: color 0.3s ease; /* Transição suave ao mudar de cor */
 }
 
 /* Media Queries para tornar o layout responsivo */
