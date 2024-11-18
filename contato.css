@@ -42,13 +42,13 @@ nav a:hover {
 
 /* Estilo para o modo claro */
 body.light {
-    background: linear-gradient(135deg, #ffefd5, #ffe4b5); /* Gradiente mais vibrante */
+    background: linear-gradient(135deg, #2190a6, #fdfdfd); /* Gradiente mais vibrante */
     color: #333333;
 }
 
 /* Estilo para o modo escuro */
 body.dark-mode {
-    background: linear-gradient(135deg, #504d4d, #615a5a); /* Gradiente mais escuro */
+    background: linear-gradient(135deg, #ad3a26, #1b1a1a); /* Gradiente mais escuro */
     color: #f5f5f5;
 }
 
@@ -138,37 +138,7 @@ li:hover {
     transform: scale(1.1);
 }
 
-.tooltip {
-    position: absolute;
-    bottom: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    white-space: nowrap;
-    transform: translateY(150%);
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
 
-li:hover .tooltip {
-    opacity: 1;
-    transform: translateY(100%);
-}
-
-/* Estilo para o botão */
-#theme-toggle {
-    position: fixed;  /* Fixar o botão na tela */
-    bottom: 20px;     /* Distância da parte inferior */
-    right: 20px;      /* Distância da borda direita */
-    font-size: 24px;  /* Tamanho do ícone */
-    background: none; /* Sem fundo */
-    border: none;     /* Sem borda */
-    cursor: pointer;  /* Cursor de pointer ao passar o mouse */
-    color: inherit;   /* Herda a cor do texto */
-    transition: color 0.3s ease; /* Transição suave ao mudar de cor */
-}
 
 /* Media Queries para tornar o layout responsivo */
 @media screen and (max-width: 600px) {
