@@ -1,7 +1,5 @@
-/* --- Importação de fontes --- */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* --- Estilos Globais --- */
 body {
     font-family: "Abril Fatface", serif;
     margin: 0;
@@ -12,15 +10,13 @@ body {
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Estilo para o modo claro */
 body.light {
-    background: linear-gradient(135deg, #2190a6, #fdfdfd); /* Gradiente mais vibrante */
+    background: linear-gradient(135deg, #2190a6, #fdfdfd);
     color: #333333;
 }
 
-/* Estilo para o modo escuro */
 body.dark-mode {
-    background: linear-gradient(135deg, #ad3a26, #050505); /* Gradiente mais escuro */
+    background: linear-gradient(135deg, #ad3a26, #050505);
     color: #f5f5f5;
 }
 
@@ -37,7 +33,6 @@ a:hover {
     color: #ff4500;
 }
 
-/* --- Cabeçalho --- */
 header {
     background-image: url('img/brasao 2.jpg');
     background-size: cover;
@@ -61,7 +56,6 @@ h1 {
     font-size: 2em;
 }
 
-/* --- Navegação --- */
 nav {
     display: flex;
     justify-content: center;
@@ -78,7 +72,6 @@ nav a:hover {
     background-color: #555;
 }
 
-/* --- Carrossel de Destaque --- */
 .carousel-container {
     max-width: 800px;
     margin: 20px auto;
@@ -113,7 +106,6 @@ nav a:hover {
     transform: translateY(-5px);
 }
 
-/* --- Animação do Carrossel --- */
 @keyframes slide {
     0% { transform: translateX(0); }
     25% { transform: translateX(-100%); }
@@ -122,7 +114,6 @@ nav a:hover {
     100% { transform: translateX(0); }
 }
 
-/* --- Container de Notícias --- */
 .noticias-container {
     display: flex;
     align-items: center;
@@ -134,7 +125,6 @@ nav a:hover {
     background-color: transparent;
 }
 
-/* --- Notícias Individuais --- */
 .noticia {
     width: 75%;
     max-width: 800px;
@@ -148,7 +138,6 @@ nav a:hover {
     margin: 0 auto;
 }
 
-/* --- Botões de Navegação do Carrossel de Notícias --- */
 .prev, .next {
     position: absolute;
     top: 50%;
@@ -190,12 +179,10 @@ nav a:hover {
     margin: 0;
 }
 
-/* --- Efeito de hover para aumentar o destaque na notícia --- */
 .noticia:hover {
     transform: scale(1.02);
 }
 
-/* --- Responsividade para dispositivos menores --- */
 @media (max-width: 768px) {
     .noticia {
         width: 90%;
@@ -210,11 +197,10 @@ nav a:hover {
     }
 }
 
-/* --- Banner de Redes Sociais --- */
 .social-banner {
     text-align: center;
     padding: 20px;
-    background-color: #343131; /* Cor de fundo para o banner */
+    background-color: #343131;
 }
 
 .social-banner span {
@@ -228,27 +214,23 @@ nav a:hover {
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Espaço entre os ícones */
+    gap: 20px;
 }
 
-/* --- Estilo para os ícones sociais --- */
 .social-icon {
     width: 30px;
     height: 30px;
-    transition: transform 0.3s ease-in-out; /* Transição suave para o efeito */
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Efeito de aumento no ícone ao passar o mouse */
 .social-icon:hover {
-    transform: scale(1.5); /* Aumenta o ícone 1.5 vezes */
+    transform: scale(1.5);
 }
 
 .card {
-    /* Outros estilos... */
     transform: translate(var(--mouse-x), var(--mouse-y));
 }
 
-/* --- Estilos Responsivos --- */
 @media (max-width: 768px) {
     header {
         height: 200px;
@@ -272,12 +254,11 @@ nav a:hover {
     }
 }
 
-/* --- Estilo para o botão de alternar tema --- */
 #theme-toggle {
-    position: fixed; /* Torna o botão fixo na tela */
-    bottom: 20px; /* Alinha o botão à borda inferior */
-    right: 20px; /* Alinha o botão à borda direita */
-    padding: 10px 20px; /* Ajuste o espaçamento interno */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
     background-color: #555;
     color: white;
     border: none;
@@ -289,42 +270,40 @@ nav a:hover {
 #theme-toggle:hover {
     background-color: #666;
 }
-/* --- Notícias Individuais com Blur --- */
+
 .noticia {
     width: 75%;
     max-width: 800px;
     padding: 20px;
-    background: rgba(57, 51, 158, 0.3); /* Fundo semi-transparente */
-    backdrop-filter: blur(50px); /* Efeito de desfoque */
-    border: 2px solid rgba(255, 255, 255, 0.2); /* Borda sutil */
+    background: rgba(57, 51, 158, 0.3);
+    backdrop-filter: blur(50px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     text-align: center;
     box-sizing: border-box;
     transition: transform 0.4s ease-in-out, background-color 0.3s ease;
     border-radius: 12px;
     margin: 0 auto;
-    color: #fff; /* Cor do texto */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .noticia h3 {
-    color: #ffffff; /* Texto destacado */
+    color: #ffffff;
     font-size: 1.5em;
     margin-bottom: 10px;
 }
 
 .noticia p {
     font-size: 1em;
-    color: #f0f0f0; /* Contraste mais suave */
+    color: #f0f0f0;
     margin: 0;
 }
 
-/* --- Efeito de hover para aumentar o destaque na notícia --- */
 .noticia:hover {
     transform: scale(1.02);
-    background: rgba(57, 51, 158, 0.5); /* Intensifica o fundo no hover */
+    background: rgba(57, 51, 158, 0.5);
 }
 
-/* --- Responsividade para dispositivos menores --- */
 @media (max-width: 768px) {
     .noticia {
         width: 90%;
@@ -338,4 +317,3 @@ nav a:hover {
         font-size: 0.95em;
     }
 }
-

@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* Estilos Globais */
 body {
-    display: flex; /* Ajuste para o layout em flexbox */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    flex-direction: column; /* Organiza o conteúdo em uma coluna */
-    height: 100vh; /* Faz o body ocupar toda a altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
     font-family: "Abril Fatface", serif;
     margin: 0;
     padding: 0;
@@ -14,44 +13,38 @@ body {
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* --- Navegação --- */
 nav {
     display: flex;
     justify-content: center;
     background-color: #444;
-    position: fixed; /* Torna o nav fixo no topo */
-    top: 0; /* Coloca na parte superior */
-    left: 0; /* Garante que ocupe toda a largura */
-    width: 100%; /* Largura total da tela */
-    z-index: 1000; /* Coloca o nav acima de outros elementos */
-    padding: 10px 0; /* Adiciona espaçamento superior e inferior */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
 }
 
-/* Links da navegação */
 nav a {
     color: #fff;
     padding: 15px 20px;
     text-decoration: none;
 }
 
-/* Efeito de hover */
 nav a:hover {
     background-color: #555;
 }
 
-/* Estilo para o modo claro */
 body.light {
-    background: linear-gradient(135deg, #2190a6, #fdfdfd); /* Gradiente mais vibrante */
+    background: linear-gradient(135deg, #2190a6, #fdfdfd);
     color: #333333;
 }
 
-/* Estilo para o modo escuro */
 body.dark-mode {
-    background: linear-gradient(135deg, #ad3a26, #050505); /* Gradiente mais escuro */
+    background: linear-gradient(135deg, #ad3a26, #050505);
     color: #f5f5f5;
 }
 
-/* Título */
 h2 {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -60,7 +53,6 @@ h2 {
     text-align: center;
 }
 
-/* Estilo para a lista de contatos */
 ul {
     list-style-type: none;
     padding: 0;
@@ -71,7 +63,6 @@ ul {
     margin-top: 160px;
 }
 
-/* Estilo para cada item da lista (quadrado) */
 li {
     width: 260px;
     height: 260px;
@@ -85,7 +76,6 @@ li {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Estilo para os links */
 a {
     display: block;
     width: 100%;
@@ -99,7 +89,6 @@ a {
     align-items: center;
 }
 
-/* Estilo para o texto */
 .text {
     position: absolute;
     z-index: 1;
@@ -108,7 +97,6 @@ a {
     color: #fff;
 }
 
-/* Adicionando a imagem como fundo */
 li:nth-child(1) {
     background-image: url('github-icon.png');
     background-size: cover;
@@ -127,22 +115,19 @@ li:nth-child(3) {
     background-position: center;
 }
 
-/* Efeito de hover nos links */
 a:hover {
     transform: scale(1.05);
 }
 
-/* Efeito de hover nos li (quadrado) */
 li:hover {
     transform: scale(1.1);
 }
 
-/* Estilo para o botão de alternar tema */
 #theme-toggle {
-    position: fixed; /* Torna o botão fixo na tela */
-    bottom: 20px; /* Alinha o botão à borda inferior */
-    right: 20px; /* Alinha o botão à borda direita */
-    padding: 10px 20px; /* Ajuste o espaçamento interno */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
     background-color: #555;
     color: white;
     border: none;
@@ -155,7 +140,6 @@ li:hover {
     background-color: #666;
 }
 
-/* Media Queries para tornar o layout responsivo */
 @media screen and (max-width: 600px) {
     h2 {
         font-size: 32px;
