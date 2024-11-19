@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/* Estilos Globais */
 body {
+    display: flex; /* Ajuste para o layout em flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Organiza o conteúdo em uma coluna */
+    height: 100vh; /* Faz o body ocupar toda a altura da tela */
     font-family: "Abril Fatface", serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #2190a6, #ad3a26);
     color: #333;
-    border-top: 5px solid black;
     transition: background 0.3s ease, color 0.3s ease;
 }
-
 /* Resetando algumas propriedades padrão do navegador */
 * {
     margin: 0;
