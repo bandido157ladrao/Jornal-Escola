@@ -1,47 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-/* Estilos Globais */
 body {
-    display: flex; /* Ajuste para o layout em flexbox */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    flex-direction: column; /* Organiza o conteúdo em uma coluna */
-    height: 100vh; /* Faz o body ocupar toda a altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-family: "Abril Fatface", serif;
     margin: 0;
     padding: 0;
     color: #333;
     transition: background 0.3s ease, color 0.3s ease;
 }
-/* Resetando algumas propriedades padrão do navegador */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Nome do colégio */
 .college-name {
     text-align: center;
     font-size: 2em;
-    color: #ffffff; /* Cor branca para destacar o nome do colégio */
+    color: #ffffff;
     margin: 20px 0;
     font-family: 'Abril Fatface', serif;
     font-weight: normal;
 }
 
-/* Contêiner principal da notícia */
 .news-container {
     width: 80%;
     max-width: 900px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Cabeçalho da notícia */
 .news-header {
     text-align: center;
     margin-bottom: 20px;
@@ -60,7 +55,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Estilo da imagem da notícia */
 .news-image {
     text-align: center;
     margin-bottom: 30px;
@@ -80,7 +74,6 @@ body {
     font-style: italic;
 }
 
-/* Resumo da notícia */
 .news-summary {
     font-size: 1.3em;
     color: #444;
@@ -88,7 +81,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* Corpo da notícia */
 .news-body {
     font-size: 1.1em;
     color: #444;
@@ -98,7 +90,7 @@ body {
 
 .news-body h2 {
     font-size: 1.6em;
-    color: #0066cc; /* Azul mais forte para títulos secundários */
+    color: #0066cc;
     margin-bottom: 15px;
 }
 
@@ -118,7 +110,6 @@ body {
     color: #444;
 }
 
-/* Rodapé da notícia */
 .news-footer {
     text-align: center;
     font-size: 1.1em;
@@ -126,7 +117,7 @@ body {
 }
 
 .news-footer a {
-    color: #2190a6; /* Cor do link em azul */
+    color: #2190a6;
     text-decoration: none;
     font-weight: bold;
 }
@@ -135,7 +126,6 @@ body {
     text-decoration: underline;
 }
 
-/* Responsividade */
 @media screen and (max-width: 768px) {
     .news-container {
         width: 95%;
@@ -143,7 +133,7 @@ body {
     }
 
     .college-name {
-        font-size: 1.8em; /* Ajusta o tamanho do nome do colégio */
+        font-size: 1.8em;
     }
 
     .news-header h1 {
@@ -167,7 +157,6 @@ body {
     }
 }
 
-/* Responsividade para telas muito pequenas (menos de 400px) */
 @media screen and (max-width: 400px) {
     body {
         padding: 10px;
@@ -179,7 +168,7 @@ body {
     }
 
     .college-name {
-        font-size: 1.6em; /* Tamanho reduzido para dispositivos muito pequenos */
+        font-size: 1.6em;
     }
 
     .news-header h1 {

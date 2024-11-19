@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-/* Estilos Globais */
 body {
-    display: flex; /* Ajuste para o layout em flexbox */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    flex-direction: column; /* Organiza o conteúdo em uma coluna */
-    height: 100vh; /* Faz o body ocupar toda a altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-family: "Abril Fatface", serif;
     margin: 0;
     padding: 0;
@@ -14,24 +12,21 @@ body {
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Resetando algumas propriedades padrão do navegador */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo do container de notícias */
 .news-container {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #ffffff; /* Fundo branco para o conteúdo */
+    background-color: #ffffff;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Cabeçalho da notícia */
 .news-header {
     text-align: center;
     margin-bottom: 20px;
@@ -39,16 +34,15 @@ body {
 
 .news-title {
     font-size: 2em;
-    color: #0066cc; /* Azul mais forte para o título */
+    color: #0066cc;
     margin-bottom: 10px;
 }
 
 .news-date {
     font-size: 1.2em;
-    color: #6699cc; /* Azul mais suave para a data */
+    color: #6699cc;
 }
 
-/* Nome do Colégio */
 .college-name {
     text-align: center;
     font-size: 1.5em;
@@ -57,7 +51,6 @@ body {
     font-family: 'Abril Fatface', serif;
 }
 
-/* Resumo da notícia */
 .news-summary {
     text-align: justify;
     margin-bottom: 20px;
@@ -65,7 +58,6 @@ body {
     color: #555;
 }
 
-/* Imagem principal */
 .news-image {
     margin-bottom: 20px;
     text-align: center;
@@ -82,7 +74,6 @@ body {
     margin-top: 10px;
 }
 
-/* Corpo da notícia */
 .news-body {
     margin-bottom: 20px;
 }
@@ -100,7 +91,6 @@ body {
     text-align: justify;
 }
 
-/* Rodapé da página */
 .news-footer {
     text-align: center;
     font-size: 1.1em;
@@ -115,20 +105,17 @@ body {
     text-decoration: underline;
 }
 
-/* Media Queries para tornar o layout responsivo */
-
-/* Ajustes para telas grandes (desktops) */
 @media (min-width: 1024px) {
     .news-container {
-        max-width: 900px; /* Aumenta a largura do container em desktops */
+        max-width: 900px;
     }
 
     .college-name {
-        font-size: 2em; /* Tamanho maior para o nome do colégio */
+        font-size: 2em;
     }
 
     .news-title {
-        font-size: 2.5em; /* Aumenta o tamanho do título */
+        font-size: 2.5em;
     }
 
     .news-date {
@@ -148,14 +135,13 @@ body {
     }
 }
 
-/* Ajustes para telas médias (tablets) */
 @media (max-width: 768px) {
     .college-name {
-        font-size: 1.8em; /* Tamanho reduzido para tablets */
+        font-size: 1.8em;
     }
 
     .news-title {
-        font-size: 2em; /* Ajusta o tamanho do título */
+        font-size: 2em;
     }
 
     .news-date {
@@ -175,62 +161,60 @@ body {
     }
 
     .news-container {
-        padding: 15px; /* Ajuste o padding */
+        padding: 15px;
     }
 }
 
-/* Ajustes para telas pequenas (celulares) */
 @media (max-width: 600px) {
     .college-name {
-        font-size: 1.6em; /* Tamanho reduzido para celulares */
+        font-size: 1.6em;
     }
 
     .news-title {
-        font-size: 1.6em; /* Diminuir o tamanho do título */
+        font-size: 1.6em;
     }
 
     .news-date {
-        font-size: 1em; /* Diminuir o tamanho da data */
+        font-size: 1em;
     }
 
     .news-summary {
-        font-size: 1em; /* Ajustar o tamanho do texto do resumo */
+        font-size: 1em;
     }
 
     .news-body p {
-        font-size: 1em; /* Reduzir o tamanho do texto principal */
+        font-size: 1em;
     }
 
     .news-footer {
-        font-size: 1em; /* Ajustar o tamanho da fonte do rodapé */
+        font-size: 1em;
     }
 
     .news-container {
-        padding: 10px; /* Diminuir o padding do container */
+        padding: 10px;
     }
 
     .section-title {
-        font-size: 1.3em; /* Ajustar o tamanho do título da seção */
+        font-size: 1.3em;
     }
 
     .news-image img {
-        max-width: 100%; /* Garantir que a imagem ocupe toda a largura disponível */
+        max-width: 100%;
         height: auto;
     }
 }
 
-/* Ajustes para telas muito pequenas (celulares em orientação retrato) */
 @media (max-width: 400px) {
     .college-name {
-        font-size: 1.4em; /* Tamanho reduzido do nome do colégio */
+        font-size: 1.4em;
     }
 
     .news-title {
-        font-size: 1.5em; /* Tamanho reduzido do título */
+        font-size: 1.5em;
     }
 
     .news-date {
-        font-size: 0.9em; /* Tamanho reduzido da data */
+        font-size: 0.9em;
     }
 
     .news-summary {

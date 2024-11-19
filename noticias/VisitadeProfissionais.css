@@ -1,26 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-/* Estilos Globais */
 body {
-    display: flex; /* Ajuste para o layout em flexbox */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    flex-direction: column; /* Organiza o conteúdo em uma coluna */
-    height: 100vh; /* Faz o body ocupar toda a altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-family: "Abril Fatface", serif;
     margin: 0;
     padding: 0;
     color: #333;
     transition: background 0.3s ease, color 0.3s ease;
 }
-/* Resetando as margens e preenchimentos padrão */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Contêiner principal da página */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -30,7 +27,6 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Cabeçalho da notícia */
 .header {
     text-align: center;
     margin-bottom: 30px;
@@ -48,7 +44,6 @@ body {
     color: #777;
 }
 
-/* Imagem principal */
 .main-image {
     text-align: center;
     margin-bottom: 30px;
@@ -68,7 +63,6 @@ figcaption {
     margin-top: 10px;
 }
 
-/* Descrição completa do evento */
 .event-description {
     margin-bottom: 30px;
     font-size: 1.1em;
@@ -80,7 +74,6 @@ figcaption {
     text-align: justify;
 }
 
-/* Principais áreas e profissões apresentadas */
 .professional-fields {
     margin-bottom: 30px;
 }
@@ -102,7 +95,6 @@ figcaption {
     margin-bottom: 10px;
 }
 
-/* Impacto nos alunos */
 .student-impact {
     margin-bottom: 30px;
 }
@@ -120,7 +112,6 @@ figcaption {
     text-align: justify;
 }
 
-/* Depoimentos dos alunos */
 .testimonials {
     margin-bottom: 30px;
 }
@@ -147,7 +138,6 @@ blockquote footer {
     text-align: right;
 }
 
-/* Rodapé */
 .footer {
     text-align: center;
     font-size: 1.1em;
@@ -155,7 +145,6 @@ blockquote footer {
     margin-top: 40px;
 }
 
-/* Responsividade para telas menores */
 @media screen and (max-width: 768px) {
     .container {
         width: 90%;
@@ -187,7 +176,6 @@ blockquote footer {
     }
 }
 
-/* Responsividade para telas muito pequenas (menos de 400px) */
 @media screen and (max-width: 400px) {
     .container {
         width: 100%;

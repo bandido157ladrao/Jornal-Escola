@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-/* Estilos Globais */
 body {
-    display: flex; /* Ajuste para o layout em flexbox */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    flex-direction: column; /* Organiza o conteúdo em uma coluna */
-    height: 100vh; /* Faz o body ocupar toda a altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-family: "Abril Fatface", serif;
     margin: 0;
     padding: 0;
@@ -14,14 +12,12 @@ body {
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Resetando algumas propriedades padrão do navegador */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Contêiner principal da notícia */
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -31,7 +27,6 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Cabeçalho: Título, Data e Imagem */
 header {
     text-align: center;
     margin-bottom: 30px;
@@ -58,7 +53,6 @@ header .header-image {
     margin-bottom: 20px;
 }
 
-/* Resumo da notícia */
 .news-summary {
     font-size: 1.3em;
     color: #444;
@@ -66,7 +60,6 @@ header .header-image {
     margin-bottom: 30px;
 }
 
-/* Corpo da notícia */
 .news-body {
     font-size: 1.1em;
     color: #444;
@@ -96,14 +89,12 @@ header .header-image {
     color: #444;
 }
 
-/* Rodapé da notícia */
 .news-footer {
     text-align: center;
     font-size: 1.1em;
     color: #333;
 }
 
-/* Responsividade */
 @media screen and (max-width: 768px) {
     .container {
         width: 95%;
@@ -130,13 +121,11 @@ header .header-image {
         font-size: 1em;
     }
 
-    /* Ajuste na imagem do cabeçalho */
     header .header-image {
-        max-width: 90%; /* Ajuste para telas médias */
+        max-width: 90%;
     }
 }
 
-/* Responsividade para telas muito pequenas (menos de 400px) */
 @media screen and (max-width: 400px) {
     body {
         padding: 10px;
@@ -167,8 +156,7 @@ header .header-image {
         font-size: 0.95em;
     }
 
-    /* Ajuste na imagem do cabeçalho */
     header .header-image {
-        max-width: 100%; /* Ajuste para telas pequenas */
+        max-width: 100%;
     }
 }
