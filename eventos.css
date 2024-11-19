@@ -7,6 +7,19 @@ body {
     background: linear-gradient(135deg, #2190a6, #ad3a26);
     color: #333;
     border-top: 5px solid black;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo para o modo claro */
+body.light {
+    background: linear-gradient(135deg, #2190a6, #fdfdfd); /* Gradiente mais vibrante */
+    color: #333333;
+}
+
+/* Estilo para o modo escuro */
+body.dark-mode {
+    background: linear-gradient(135deg, #ad3a26, #050505); /* Gradiente mais escuro */
+    color: #f5f5f5;
 }
 
 nav {
@@ -163,6 +176,25 @@ a:hover {
     color: #ff4500;
 }
 
+/* Estilo para o botão de alternar tema */
+#theme-toggle {
+    position: fixed; /* Torna o botão fixo na tela */
+    bottom: 20px; /* Alinha o botão à borda inferior */
+    right: 20px; /* Alinha o botão à borda direita */
+    padding: 10px 20px; /* Ajuste o espaçamento interno */
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#theme-toggle:hover {
+    background-color: #666;
+}
+
+/* Media Queries para tornar o layout responsivo */
 @media (max-width: 768px) {
     .container {
         width: 100%;
@@ -205,4 +237,3 @@ a:hover {
         width: 40px;
     }
 }
-
