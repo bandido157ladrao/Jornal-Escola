@@ -1,23 +1,28 @@
-/* Estilos globais */
 body {
-    font-family: "Arial", sans-serif;
+    font-family: "Abril Fatface", serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #2190a6, #ad3a26); 
+    background: linear-gradient(135deg, #2190a6, #ad3a26);
     color: #333;
-    line-height: 1.6;
-    padding-top: 20px;
+    border-top: 5px solid black;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Contêiner principal da notícia */
+/* Resetando algumas propriedades padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do container de notícias */
 .news-container {
-    width: 80%;
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    background-color: #ffffff; /* Fundo branco para o conteúdo */
+    border-radius: 8px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 /* Cabeçalho da notícia */
@@ -26,101 +31,215 @@ body {
     margin-bottom: 20px;
 }
 
-.news-header h1 {
-    font-size: 2.5em;
-    color: #333;
+.news-title {
+    font-size: 2em;
+    color: #0066cc; /* Azul mais forte para o título */
     margin-bottom: 10px;
-    line-height: 1.2;
 }
 
 .news-date {
-    font-size: 1.1em;
-    color: #666;
+    font-size: 1.2em;
+    color: #6699cc; /* Azul mais suave para a data */
+}
+
+/* Nome do Colégio */
+.college-name {
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
     margin-bottom: 20px;
+    font-family: 'Abril Fatface', serif;
 }
 
 /* Resumo da notícia */
 .news-summary {
-    font-size: 1.3em;
-    color: #444;
-    text-align: center;
-    margin-bottom: 30px;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #555;
 }
 
-/* Estilo da imagem da notícia */
+/* Imagem principal */
 .news-image {
+    margin-bottom: 20px;
     text-align: center;
-    margin-bottom: 30px;
 }
 
 .news-image img {
     max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
 }
 
 .news-image figcaption {
     font-size: 1em;
     color: #777;
     margin-top: 10px;
-    font-style: italic;
 }
 
-/* Detalhes do conteúdo da notícia */
-.news-details {
-    font-size: 1.1em;
-    color: #444;
-    line-height: 1.8;
-    margin-bottom: 40px;
-}
-
-.news-details p {
+/* Corpo da notícia */
+.news-body {
     margin-bottom: 20px;
 }
 
-/* Citação dos alunos */
-.news-details em {
-    font-style: italic;
-    color: #2a5d63;
+.section-title {
+    font-size: 1.5em;
+    color: #0066cc;
+    margin-bottom: 10px;
 }
 
-/* Rodapé da notícia */
+.news-body p {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Rodapé da página */
 .news-footer {
     text-align: center;
     font-size: 1.1em;
-    color: #333;
 }
 
 .news-footer a {
-    color: #2190a6; /* Cor do link em azul */
+    color: #0066cc;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .news-footer a:hover {
     text-decoration: underline;
 }
 
-/* Responsividade */
-@media screen and (max-width: 768px) {
+/* Media Queries para tornar o layout responsivo */
+
+/* Ajustes para telas grandes (desktops) */
+@media (min-width: 1024px) {
     .news-container {
-        width: 95%;
+        max-width: 900px; /* Aumenta a largura do container em desktops */
     }
 
-    .news-header h1 {
-        font-size: 2em;
+    .college-name {
+        font-size: 2em; /* Tamanho maior para o nome do colégio */
+    }
+
+    .news-title {
+        font-size: 2.5em; /* Aumenta o tamanho do título */
+    }
+
+    .news-date {
+        font-size: 1.3em;
     }
 
     .news-summary {
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 
-    .news-details {
-        font-size: 1em;
+    .news-body p {
+        font-size: 1.2em;
     }
 
     .news-footer {
-        font-size: 1em;
+        font-size: 1.2em;
+    }
+}
+
+/* Ajustes para telas médias (tablets) */
+@media (max-width: 768px) {
+    .college-name {
+        font-size: 1.8em; /* Tamanho reduzido para tablets */
+    }
+
+    .news-title {
+        font-size: 2em; /* Ajusta o tamanho do título */
+    }
+
+    .news-date {
+        font-size: 1.1em;
+    }
+
+    .news-summary {
+        font-size: 1.05em;
+    }
+
+    .news-body p {
+        font-size: 1.05em;
+    }
+
+    .section-title {
+        font-size: 1.4em;
+    }
+
+    .news-container {
+        padding: 15px; /* Ajuste o padding */
+    }
+}
+
+/* Ajustes para telas pequenas (celulares) */
+@media (max-width: 600px) {
+    .college-name {
+        font-size: 1.6em; /* Tamanho reduzido para celulares */
+    }
+
+    .news-title {
+        font-size: 1.6em; /* Diminuir o tamanho do título */
+    }
+
+    .news-date {
+        font-size: 1em; /* Diminuir o tamanho da data */
+    }
+
+    .news-summary {
+        font-size: 1em; /* Ajustar o tamanho do texto do resumo */
+    }
+
+    .news-body p {
+        font-size: 1em; /* Reduzir o tamanho do texto principal */
+    }
+
+    .news-footer {
+        font-size: 1em; /* Ajustar o tamanho da fonte do rodapé */
+    }
+
+    .news-container {
+        padding: 10px; /* Diminuir o padding do container */
+    }
+
+    .section-title {
+        font-size: 1.3em; /* Ajustar o tamanho do título da seção */
+    }
+
+    .news-image img {
+        max-width: 100%; /* Garantir que a imagem ocupe toda a largura disponível */
+        height: auto;
+    }
+}
+
+/* Ajustes para telas muito pequenas (celulares em orientação retrato) */
+@media (max-width: 400px) {
+    .college-name {
+        font-size: 1.4em; /* Tamanho reduzido do nome do colégio */
+    }
+
+    .news-title {
+        font-size: 1.5em; /* Tamanho reduzido do título */
+    }
+
+    .news-date {
+        font-size: 0.9em; /* Tamanho reduzido da data */
+    }
+
+    .news-summary {
+        font-size: 0.95em;
+    }
+
+    .news-body p {
+        font-size: 0.95em;
+    }
+
+    .news-footer {
+        font-size: 0.95em;
+    }
+
+    .section-title {
+        font-size: 1.3em;
     }
 }
