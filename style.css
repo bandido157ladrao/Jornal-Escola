@@ -1,5 +1,5 @@
 /* --- Importação de fontes --- */
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 /* --- Estilos Globais --- */
 body {
@@ -65,7 +65,7 @@ h1 {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #444;
+    background-color: #555;
 }
 
 nav a {
@@ -248,7 +248,6 @@ nav a:hover {
     transform: translate(var(--mouse-x), var(--mouse-y));
 }
 
-
 /* --- Estilos Responsivos --- */
 @media (max-width: 768px) {
     header {
@@ -272,3 +271,71 @@ nav a:hover {
         padding: 10px 0;
     }
 }
+
+/* --- Estilo para o botão de alternar tema --- */
+#theme-toggle {
+    position: fixed; /* Torna o botão fixo na tela */
+    bottom: 20px; /* Alinha o botão à borda inferior */
+    right: 20px; /* Alinha o botão à borda direita */
+    padding: 10px 20px; /* Ajuste o espaçamento interno */
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#theme-toggle:hover {
+    background-color: #666;
+}
+/* --- Notícias Individuais com Blur --- */
+.noticia {
+    width: 75%;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(57, 51, 158, 0.3); /* Fundo semi-transparente */
+    backdrop-filter: blur(50px); /* Efeito de desfoque */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Borda sutil */
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.4s ease-in-out, background-color 0.3s ease;
+    border-radius: 12px;
+    margin: 0 auto;
+    color: #fff; /* Cor do texto */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+.noticia h3 {
+    color: #ffffff; /* Texto destacado */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.noticia p {
+    font-size: 1em;
+    color: #f0f0f0; /* Contraste mais suave */
+    margin: 0;
+}
+
+/* --- Efeito de hover para aumentar o destaque na notícia --- */
+.noticia:hover {
+    transform: scale(1.02);
+    background: rgba(57, 51, 158, 0.5); /* Intensifica o fundo no hover */
+}
+
+/* --- Responsividade para dispositivos menores --- */
+@media (max-width: 768px) {
+    .noticia {
+        width: 90%;
+    }
+
+    .noticia h3 {
+        font-size: 1.3em;
+    }
+
+    .noticia p {
+        font-size: 0.95em;
+    }
+}
+
